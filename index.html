@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI-Calculator</title>
+    <link rel="stylesheet" href="emicss.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h2>EMI Calculator : </h2>
+            <fieldset>
+                <p>Amount ₹ :
+                    <input type="number" id="amount" onchange="Calculate()"/>
+                </p>
+                <p>Interest Rate : 
+                    <input type="number" id="rate" onchange="Calculate()"/>
+                </p>
+            
+                <p>Months to Pay :
+                    <input type="number" id="months" onchange="Calculate()"/>
+                </p>
+
+                
+            </fieldset>
+            
+            <h2 id="total"></h2>
+        </div>
+    </div>
+    <script src="emi.js"></script>
+</body>
+</html>
